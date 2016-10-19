@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Android\\Test\\android-Camera2Basic-master\\android-Camera2Basic-master\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_rotate.png",
+        "source": "D:\\Android\\Test\\android-Camera2Basic-master\\android-Camera2Basic-master\\Application\\src\\main\\res\\drawable-xxhdpi\\ic_rotate.png"
+    },
+    {
+        "merged": "D:\\Android\\Test\\android-Camera2Basic-master\\android-Camera2Basic-master\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
+        "source": "D:\\Android\\Test\\android-Camera2Basic-master\\android-Camera2Basic-master\\Application\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android\\Test\\android-Camera2Basic-master\\android-Camera2Basic-master\\Application\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_info.png",
+        "source": "D:\\Android\\Test\\android-Camera2Basic-master\\android-Camera2Basic-master\\Application\\src\\main\\res\\drawable-xxhdpi\\ic_action_info.png"
+    }
+]
