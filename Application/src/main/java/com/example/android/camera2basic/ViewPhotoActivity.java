@@ -147,8 +147,8 @@ public class ViewPhotoActivity extends Activity {
     }
 
     public static void saveToFile(Activity activity, Bitmap rotatedImg){
-        String root = Environment.getExternalStorageDirectory().toString();
-        File myDir = new File(root + "/CameraTest");
+        String root = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).toString();
+        File myDir = new File(root + "/CameraTestApp");
         if (!myDir.exists()) {
             myDir.mkdirs();
         }
@@ -161,7 +161,7 @@ public class ViewPhotoActivity extends Activity {
             file.delete();
         try {
             FileOutputStream out = new FileOutputStream(file);
-            rotatedImg.compress(Bitmap.CompressFormat.JPEG, 100, out);
+            rotatedImg.compress(Bitmap.CompressFormat.JPEG, 80, out);
             out.flush();
             out.close();
         } catch (Exception ex) {
