@@ -951,8 +951,9 @@ public class Camera2BasicFragment extends Fragment
                         output.close();
                         SharedPreferences prefs = mActivity.getSharedPreferences(ViewPhotoActivity.PREFS_FILE, Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor = prefs.edit();
-                        editor.putFloat(ViewPhotoActivity.PHOTO_ORIENTATION,
-                                mActivity.getResources().getConfiguration().orientation == 2 ? 0 : 90);
+                        float orientation = mActivity.getWindowManager().getDefaultDisplay().getRotation();
+                        float angle = orientation == 0 ? 90 : (orientation == 3 ? 180 : 0);
+                        editor.putFloat(ViewPhotoActivity.PHOTO_ORIENTATION, angle);
                         editor.apply();
 
                         Intent viewPhotoIntent = new Intent(mActivity, ViewPhotoActivity.class);
