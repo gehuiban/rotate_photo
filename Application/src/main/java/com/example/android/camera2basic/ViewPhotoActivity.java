@@ -109,7 +109,8 @@ public class ViewPhotoActivity extends Activity {
         super.onResume();
         SharedPreferences prefs = getSharedPreferences(PREFS_FILE, Context.MODE_PRIVATE);
         angle = prefs.getFloat(PHOTO_ORIENTATION, 0f);
-        photoView.setImageBitmap(decodeSampledBitmapFromFile(filePath, width, height, angle));
+        rotatedImg = decodeSampledBitmapFromFile(filePath, width, height, angle);
+        photoView.setImageBitmap(rotatedImg);
     }
 
     @Override
